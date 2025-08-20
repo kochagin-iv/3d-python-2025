@@ -67,6 +67,12 @@ def run_app():  # noqa
     fig.update_layout(
         scene_camera=camera_settings,
         margin=dict(l=0, r=0, t=0, b=0),
+        scene=dict(
+            xaxis=dict(showbackground=False, visible=False),
+            yaxis=dict(showbackground=False, visible=False),
+            zaxis=dict(showbackground=False, visible=False),
+            bgcolor='white'
+        )
     )
 
     with (
